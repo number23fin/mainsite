@@ -12,5 +12,121 @@
     <link rel="icon" type="image/png" href="./resources/images/favicon.png"/>
 	</head>
 	<body>
+    <!-- MAIN UI ELEMENTS -->
+    <main class="ui-wrapper page-not-loaded">
+      <!-- LOADER -->
+      <div class="loader flex flex--center">
+        <span class="loader__text">NUMBER 23</span>
+      </div>
+      <!-- MAIN MENU -->
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="menu-list__item" data-page="1">NUMBER 23</li>
+          <li class="menu-list__item" data-page="2">ABOUT US</li>
+          <li class="menu-list__item" data-page="3">TOKENOMICS</li>
+        </ul>
+      </div>
+      <!-- HEADER -->
+      <header class="fixed-content-header">
+        <div class="flex flex--center">
+          <div class="burger" data-follow>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </div>
+          <div class="fixed-content-header__logo">NUMBER 23</div>
+        </div>
+      </header>
+      <!-- PAGING -->
+      <div class="fixed-content-paging">
+        <div class="paging__page" data-page="0"></div>
+        <div class="paging__page section--hidden" data-page="1"></div>
+        <div class="paging__page section--hidden" data-page="2"></div>
+        <div class="paging__page section--hidden" data-page="3"></div>
+      </div>
+      <!-- FOOTER -->
+      <div class="fixed-content-footer">
+        <div class="social-links">
+          <a class="social-links__anchor" href="https://twitter.com/Number23_real" target="_blank">
+            <img class="social-links__image" src="./resources/images/socials/twitter.svg" alt="Twitter logo" width="20" height="20">
+          </a>
+        </div>
+        <div class="fixed-content-footer__copy">
+          <span class="footer-copy__date"></span>
+          <span class="footer-copy__name">Number 23</span>
+        </div>
+      </div>
+      <!-- MAIN CONTENT -->
+      <!-- 0-header, 1-counter, 2-about, 3-tokenomic-->
+      <div class="content">
+        <div class="content-section" data-page="0">
+          <div class="configuration__letters configuration__letters--hidden">
+            <span class="configuration__letters-text">NUMBER 23</span>
+          </div>
+          <div class="scroll-letters">
+            <span class="scroll-letters__letter" title="S">S</span>
+            <span class="scroll-letters__letter" title="C">C</span>
+            <span class="scroll-letters__letter" title="R">R</span>
+            <span class="scroll-letters__letter" title="O">O</span>
+            <span class="scroll-letters__letter" title="L">L</span>
+            <span class="scroll-letters__letter" title="L">L</span>
+          </div>
+        </div>
+        <div class="content-section section--hidden" data-page="1">
+          <div class="num23">
+            <div>We are at:</div>
+            <div class="num23-progress text-center">
+              <span id="current-count">16</span>/<span class="red-text">23</span>
+            </div>
+            <div class="text-right"><span id="to-go" class="red-text">7</span> transaction<span id="count-plural"></span> to go...</div>
+            <div class="last-winner text-center">Last winner: <span id="last-address" class="red-text"></span></div>
+          </div>
+        </div>
+        <div class="content-section section--hidden" data-page="2">
+          <h1 class="content-section__title">FEATURE</h1>
+          <p class="content-section__text">Every <span class="red-text">23</span> transactions, the one making the latest Buy order will receive a reward from us!</p>
+          <h1 class="content-section__title">ABOUT US</h1>
+          <p class="content-section__text">We love the number <span class="red-text">23</span>. That's all!</p>
+        </div>
+        <div class="content-section section--hidden" data-page="3">
+          <h1 class="content-section__title">TOKENOMICS</h1>
+          <div class="content-section__text" style="line-height: 30px;">
+            Total supply: <span class="red-text">23</span> tokens!!!<br/>
+            Liquidity added: <span class="red-text">100%</span><br/>
+            Taxes: <span class="red-text">6%</span> buy tax - <span class="red-text">9%</span> sell tax
+          </div>
+          <div class="content-services">
+            <div class="content-services__service">
+              <img class="content-service__image" src="./resources/images/icons/reward.svg" alt="Marketing icon" />
+              <span class="content-service__text">Reward</span>
+              <ul class="extended-services">
+                <li class="extended-services__service">Buy: <span>2%</span></li>
+                <li class="extended-services__service">Sell: <span>3%</span></li>
+              </ul>
+            </div>
+            <div class="content-services__service">
+              <img class="content-service__image" src="./resources/images/icons/marketing.svg" alt="Marketing icon" />
+              <span class="content-service__text">Marketing</span>
+              <ul class="extended-services">
+                <li class="extended-services__service">Buy: <span>3%</span></li>
+                <li class="extended-services__service">Sell: <span>5%</span></li>
+              </ul>
+            </div>
+            <div class="content-services__service">
+              <img class="content-service__image" src="./resources/images/icons/liquidity.svg" alt="Marketing icon" />
+              <span class="content-service__text">Liquidity</span>
+              <ul class="extended-services">
+                <li class="extended-services__service">Buy: <span>1%</span></li>
+                <li class="extended-services__service">Sell: <span>1%</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js" integrity="sha512-Veaz5IU2iRpa0BBrJlJeRgfJ7OAHWtVJZTXvgdH7s3ffsLUChllMCqC0Bb+eeRxGlrZ06iYIE/R3KsciCrgv3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="23.js"></script>
 	</body>
 </html>
